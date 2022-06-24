@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Mania</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Food Mania</h1>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contacts.html">CONTACTS</a></li>
+                <li><a href="orderlist.html">ORDERS</a></li>
+                <li><a href="offers.html">OFFERS</a></li>
+            </ul>
+            <form action="order.php" id="order">
+                <select name="foods" id="foods">
+                    <option value="none">Select Food.....</option>
+                    <option value="Chicken_Biryani">Chicken Biryani</option>
+                    <option value="Chicken_Butter_Masala">Chicken Butter Masala</option>
+                    <option value="Shahi_Paneer">Shahi Paneer</option>
+                    <option value="Butter_Naan">Butter Naan</option>
+                </select>
+                <select name="quantity" id="quantity">
+                    <option value="0">Qty...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <div class="price">
+                    <p>Total Cost: ₹.</p>
+                    <p id="price">0</p>
+                </div>
+                <button id="order_btn"><a href="order.php">Place Order</a></button>
+            </form>
+        </div>
+        <svg onclick="OpenSideNav()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                <path
+                    d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+            </svg>
+            <div id="sideNav">
+                <svg onclick="CloseSideNav()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contacts.html">CONTACTS</a></li>
+                    <li><a href="orderlist.html">ORDERS</a></li>
+                    <li><a href="offers.html">OFFERS</a></li>
+                </ul>
+                     </div>
+                     <form action="order.php" id="order">
+                        <select name="foods" id="foods">
+                            <option value="none">Select Food.....</option>
+                            <option value="Chicken_Biryani">Chicken Biryani</option>
+                            <option value="Chicken_Butter_Masala">Chicken Butter Masala</option>
+                            <option value="Shahi_Paneer">Shahi Paneer</option>
+                            <option value="Butter_Naan">Butter Naan</option>
+                        </select>
+                        <select name="quantity" id="quantity">
+                            <option value="0">Qty...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <div class="price">
+                            <p>Total Cost: ₹.</p>
+                            <p id="price">0</p>
+                        </div>
+                        <button id="order_btn"><a href="order.php">Place Order</a></button>
+                    </form>
+    </header>
+    <main></main>
+    <footer></footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
